@@ -1,4 +1,4 @@
-var users = [];
+let users = [];
 function validationForm(username, password, confirmPass) {
   // Kiem tra du lieu
   if (username === "" || password === "" || confirmPass === "") {
@@ -17,13 +17,13 @@ function validationForm(username, password, confirmPass) {
 }
 function register() {
   // Buoc 1: lay gia tri
-  var username = document.getElementById("username").value;
-  var password = document.getElementById("password").value;
-  var confirmPass = document.getElementById("confirmPass").value;
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
+  let confirmPass = document.getElementById("confirmPass").value;
 
   if (validationForm(username, password, confirmPass)) {
     // Buoc 2: Dua vao 1 object
-    var userInfor = {
+    let userInfor = {
       username,
       password,
       confirmPass,

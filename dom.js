@@ -1,4 +1,4 @@
-var myDocument = {
+let myDocument = {
   html: {
     head: {
       title: "Tieu de trang web",
@@ -24,18 +24,18 @@ var myDocument = {
  *
  */
 
-var h1Element1 = document.getElementById("tieuDe");
-var h1Element2 = document.getElementsByClassName("title")[0];
-var h1Element3 = document.querySelector("h1#tieuDe.title");
-var h1Element4 = document.querySelectorAll("h1#tieuDe.title")[0]; // return NodeList()
-var h1Element5 = document.getElementsByTagName("h1")[0];
+let h1Element1 = document.getElementById("tieuDe");
+let h1Element2 = document.getElementsByClassName("title")[0];
+let h1Element3 = document.querySelector("h1#tieuDe.title");
+let h1Element4 = document.querySelectorAll("h1#tieuDe.title")[0]; // return NodeList()
+let h1Element5 = document.getElementsByTagName("h1")[0];
 // console.log(h1Element1);
 // console.log(h1Element2);
 // console.log(h1Element3);
 // console.log(h1Element4);
 // console.log(h1Element5);
 
-var myInfor = {
+let myInfor = {
   myName: "Nguyễn Minh Hoàng",
   age: 32,
   address: "Bắc Giang",
@@ -47,10 +47,10 @@ var myInfor = {
  * Gợi ý: sử dụng createElement, appenChild innerText, innerHTML...
  */
 
-var cardElement = document.getElementsByClassName("card")[0];
+let cardElement = document.getElementsByClassName("card")[0];
 console.log(cardElement);
 
-var htmlText = `
+let htmlText = `
 <h2 class="name">Tên: ${myInfor.myName}</h2>
 <div class="age">Tuổi: ${myInfor.age + 1}</div>
 <div>Địa chỉ: ${myInfor.address}</div>
@@ -59,7 +59,7 @@ var htmlText = `
 console.log(typeof htmlText);
 cardElement.innerHTML = htmlText;
 
-var ageElement = document.getElementsByClassName("age")[0];
+let ageElement = document.getElementsByClassName("age")[0];
 
 console.log(ageElement);
 ageElement.style.fontWeight = 900;

@@ -27,7 +27,7 @@ let myName = "hoang";
 /**
  * let
  * 1. let không hoisting
- * 2. khai báo biến bằng let thì có phạm vi hoạt động là block scope và function scope
+ * 2. khai báo biến bằng let thì có phạm vi hoạt động là block scope và function scope: nghĩa là không thể gọi hàm trước khi khai báo
  * 3. Không thể khai báo lại
  * 4. Được phép gán lại.
  */

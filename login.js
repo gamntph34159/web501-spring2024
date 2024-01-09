@@ -12,13 +12,13 @@ function validationForm(username, password) {
 }
 function login() {
   // Buoc 1: lay gia tri
-  var username = document.getElementById("username").value;
-  var password = document.getElementById("password").value;
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
 
   if (validationForm(username, password)) {
     // Buoc 2: Lấy dữ liệu từ API (localStorage)
     if (localStorage.getItem("users")) {
-      var dataLocalStorage = JSON.parse(localStorage.getItem("users"));
+      let dataLocalStorage = JSON.parse(localStorage.getItem("users"));
       // Buoc 3: So sanh gia trị nhập vào và giá trị lấy từ localStorage
       dataLocalStorage.some((item) => {
         if (item.username === username && item.password === password) {
