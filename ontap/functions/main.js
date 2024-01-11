@@ -26,7 +26,7 @@ function sum(a, b) {
   // arrow function: viet rut gon
   const tinhTong1 = (a, b) => a + b;
   
-  const returnObj = () => {
-    name: "Hoang",
-    age: 18
-  }
+//   const returnObj = () => {
+//     name: "Hoang",
+//     age: 18
+//   }
